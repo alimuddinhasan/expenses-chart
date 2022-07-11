@@ -1,3 +1,4 @@
+import Content from "@/components/Content/Content";
 import Header from "@/components/Header/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -13,12 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="px-5">
         <Header />
-        <div>
-          <h1>Spending - Last 7 days</h1>
-          <div>Chart</div>
-          <p>Total</p>
-          <span>$478.33</span>
-        </div>
+        <Content />
       </div>
     </Fragment>
   );
