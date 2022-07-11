@@ -6,6 +6,8 @@ import Header from "../Header";
 describe("Header", () => {
   it("should render Header component", () => {
     render(<Header />);
-    expect(screen.getByText("Header")).toBeInTheDocument();
+    expect(screen.getByText('My balance')).toBeInTheDocument();
+    expect(screen.getByText('$921.48')).toBeInTheDocument();
+    expect(screen.getByAltText('logo')).toBeInTheDocument();
   });
 });

@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
@@ -10,15 +11,14 @@ const Home: NextPage = () => {
         <meta name='description' content='The expenses chart' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div>
-        <p>My balance</p>
-        <p>$921.48</p>
-      </div>
-      <div>
-        <h1>Spending - Last 7 days</h1>
-        <div>Chart</div>
-        <p>Total</p>
-        <span>$478.33</span>
+      <div className="px-5">
+        <Header />
+        <div>
+          <h1>Spending - Last 7 days</h1>
+          <div>Chart</div>
+          <p>Total</p>
+          <span>$478.33</span>
+        </div>
       </div>
     </Fragment>
   );
