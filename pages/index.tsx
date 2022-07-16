@@ -12,9 +12,11 @@ const Home: NextPage = () => {
         <meta name='description' content='The expenses chart' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className="px-5 flex flex-col gap-5 justify-center h-screen">
-        <Header />
-        <Content />
+      <div className='px-5 flex justify-center'>
+        <div className='md:max-w-sm flex flex-col gap-5 justify-center h-screen'>
+          <Header />
+          <Content />
+        </div>
       </div>
     </Fragment>
   );
