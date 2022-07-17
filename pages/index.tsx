@@ -4,6 +4,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 
+import data from "data/data.json";
+
 const Home: NextPage = () => {
   return (
     <Fragment>
@@ -15,7 +17,9 @@ const Home: NextPage = () => {
       <div className='px-5 flex justify-center'>
         <div className='md:max-w-sm flex flex-col gap-5 justify-center h-screen'>
           <Header />
-          <Content />
+          <Content
+            data={data.map((item) => ({ label: item.day, value: item.amount }))}
+          />
         </div>
       </div>
     </Fragment>
