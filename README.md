@@ -1,25 +1,54 @@
-# Next.js + Jest
+# Frontend Mentor - Expenses chart component solution
 
-This example shows how to configure Jest to work with Next.js.
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+## Table of contents
 
-## How to Use
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-In your terminal, run the following command:
+## Overview
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-# or
-yarn create next-app --example with-jest with-jest-app
-# or
-pnpm create next-app --example with-jest with-jest-app
-```
+### The challenge
 
-## Run Jest Tests
+Users should be able to:
 
-```bash
-npm test
-```
+- View the bar chart and hover over the individual bars to see the correct amounts for each day
+- See the current day’s bar highlighted in a different colour to the other bars
+- View the optimal layout for the content depending on their device’s screen size
+- See hover states for all interactive elements on the page
+- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
+
+### Screenshot
+
+![Desktop](./screenshots/desktop.png)
+![Mobile](./screenshots/mobile.png)
+
+### Links
+
+- Live Site URL: [https://moonlit-rolypoly-76e64a.netlify.app/](https://moonlit-rolypoly-76e64a.netlify.app/)
+
+## My process
+
+### Built with
+
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
+
+## Author
+
+- Frontend Mentor - [@alimuddinhasan](https://www.frontendmentor.io/profile/alimuddinhasan)
