@@ -26,7 +26,7 @@ function Block({ label, value }: IBlockProps) {
   return (
     <div className='flex-1 flex flex-col gap-2 items-center relative'>
       <div
-        className='bg-dark-brown h-auto w-full p-1 rounded-md absolute -top-8'
+        className='bg-dark-brown h-auto w-auto p-1 rounded-md absolute -top-8'
         ref={valueRef}
       >
         <p className='text-xs text-center text-very-pale-orange'>${value}</p>
