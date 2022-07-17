@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import PropTypes from "prop-types";
 
 interface IBlockProps {
   label: string;
@@ -24,24 +23,32 @@ function Block({ label, value }: IBlockProps) {
   }, [isMouseEnter]);
 
   return (
-    <div className='flex-1 flex flex-col gap-2 items-center relative'>
+    <div
+      className='flex-1 flex flex-col gap-2 items-center relative'
+    >
       <div
         className='bg-dark-brown h-auto w-auto p-1 rounded-md absolute -top-8'
         ref={valueRef}
+        data-testid='value-container'
       >
-        <p className='text-xs text-center text-very-pale-orange'>${value}</p>
+        <p
+          className='text-xs text-center text-very-pale-orange'
+        >
+          ${value}
+        </p>
       </div>
       <div
         className='bg-soft-red rounded-md hover:bg-opacity-50 w-8'
         onMouseEnter={() => setMouseEnter(true)}
         onMouseLeave={() => setMouseEnter(false)}
         ref={blockRef}
+        data-testid='block'
       ></div>
-      <p className='text-xs text-center'>{label}</p>
+      <p className='text-xs text-center'>
+        {label}
+      </p>
     </div>
   );
 }
-
-Block.propTypes = {};
 
 export default Block;
